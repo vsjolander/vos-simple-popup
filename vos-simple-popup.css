@@ -32,6 +32,7 @@
     background-color: #fff;
     background-size: cover;
     background-repeat: no-repeat;
+    width: 100%;
 }
 
 .vos-simple-popup__modal .close {

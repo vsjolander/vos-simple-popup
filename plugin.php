@@ -51,15 +51,14 @@ class VosSimplePopup
         $this->options = [get_option('vos-simple-popup-options'), "url" => get_option('vos-simple-popup-background-image'), "takeover" => get_option('vos-simple-popup-takeover')];
         ?>
         <div class="vos-simple-popup<?php if ($this->options['takeover']) echo ' vos-simple-popup--takeover'; ?>">
-            <div class="vos-simple-popup__backdrop">
-                <div class="vos-simple-popup__container">
-                    <div class="vos-simple-popup__modal"
-                         style="background-image: url('<?php echo $this->options['url'] ?>');">
-                        <div class="vos-simple-popup__content">
-                            <?php echo $this->options[0]['content']; ?>
-                        </div>
-                        <div class="close"><?= ($this->options['takeover'] ?  'Till Restaurang Folkparken >>' :  '&times;'); ?></div>
+            <div class="vos-simple-popup__backdrop"></div>
+            <div class="vos-simple-popup__container">
+                <div class="vos-simple-popup__modal"
+                     style="background-image: url('<?php echo $this->options['url'] ?>');">
+                    <div class="vos-simple-popup__content">
+                        <?php echo $this->options[0]['content']; ?>
                     </div>
+                    <div class="close"><?= ($this->options['takeover'] ?  'Till Restaurang Folkparken >>' :  '&times;'); ?></div>
                 </div>
             </div>
         </div>
